@@ -1,0 +1,8 @@
+{
+    "key": "languages",
+    "pictures": [
+        "./images/uk.png",
+        "./images/france.png",
+        "./images/korea.png"
+    ]
+}

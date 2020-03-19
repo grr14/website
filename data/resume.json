@@ -1,0 +1,77 @@
+{
+  "key": "resume",
+  "cv": [
+    {
+      "title": "Education",
+      "content": [
+        { "dt":"2012-2016",
+          "dd":"Master in Computer Engineering, specialization in Security and E-Banking, Ecole Nationale Supérieure d'Ingénieurs de Caen, Caen, France"
+        },
+        { "dt":"2015-2016",
+          "dd":"Master in Computer Science E-secure, University of Caen Basse-Normandie (in parallel), Caen, France"},
+        { "dt":"2010-2012",
+          "dd":"Preparatory classes : two-year undergraduate intensive course in mathematics and physics, Lycée Chaptal, Paris, France"},
+        { "dt":"2010",
+          "dd":"High School Degree, with focus on mathematics and physics. With high honors."}
+      ]
+    },
+    {
+      "title": "Work",
+      "content": [
+        { "dt":"August 2016-May 2018",
+          "dd":"Sopra Banking Software, Meudon,France"
+        }
+      ],
+      "description":"<b> &#x21E8 Project Samba :</b> Maintenance of the ATM Manager software Stecard for the account of Transactis",
+      "tasks" : [ "<ul><li>Analysis and correction of software anomalies</li><li>Conception of software evolutions, redaction of the technical documentation</li><li>Integration and delivery to the client</li><li>Regression testing, Acceptation testing</li>"]
+    },
+    {
+      "title": "Internships",
+      "content" : [
+        {"dt":"May 2016-August 2016","dd":"Addition of features on an ATM software, Sopra Banking Software, Vélizy-Villacoublay,France"},
+        {"dt":"April 2015-July 2015","dd":"Study of the Keccak function and its vulnerabilities, University of Gjøvik, Gjøvik, Norway"}
+      ]
+    },
+    {
+      "title":"Projects",
+      "content": [
+        {"dt":"October 2016 - February 2017","dd":"Study on the implementation of a MPI : Purchase or Development ?, Opsise, work in pairs."},
+        {"dt":"October 2014 - April 2015","dd":"Programmation in ANSI-C of the cryptoalgorithm E0, for the Ensicaen, work in pairs"}
+      ]
+    },
+    {
+      "title":"Skills - Programmation",
+      "content" : [
+        {"dt":"Languages","dd":"C, C++, Java, Python"},
+        {"dt":"Web","dd":"HTML5/CSS3, JavaScript ES6, node.js, React JS, Ajax"},
+        {"dt":"IDE","dd":"Eclipse, Visual Studio Code, SQL Developper, Code Blocks, Sublime Text"},
+        {"dt":"Other softwares","dd":"Kanest, HP Quality Center Software"}
+      ]
+    },
+    {
+      "title":"Skills - Electronic Banking",
+      "content":[
+        {"dt":"Protocols","dd":"DIEGO, NDC"},
+        {"dt":"ISO","dd":"EMV, ISO8583, ISO27001"}
+      ]
+    },
+    {
+      "title":"Languages",
+      "content": [
+        {"dt":"French","dd":"Mothertongue"},
+        {"dt":"English","dd":"Fluent (TOEIC Score : 950)"},
+        {"dt":"German","dd":"Advanced (Level B2)"},
+        {"dt":"Korean","dd":"Intermediate"}
+      ]
+    },
+    {
+      "title":"Miscellaneous",
+      "content" : [
+        {"dt":"Travels","dd":"Lived one year (september 2019-september 2020) in South Korea, trips around Asia"},
+        {"dt":"Sports","dd":"Tennis in competition for 12 years, Badminton, Football"},
+        {"dt":"Others","dd":"Good experience teaching french to foreign students"}
+      ]
+    }
+  ],
+  "numSections": 8
+}
