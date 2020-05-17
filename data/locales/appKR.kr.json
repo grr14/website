@@ -1,24 +1,113 @@
 {
-    "closed_cell" : {
-        "intro" : {
-            "up" : "소개함",
-            "down" : "제 이야기"
-        },
-        "resume" : {
-            "up" : "이력서",
-            "down" : "저를 고용해 줄 수 있니 ?"
-        },
-        "korean" : {
-            "up" : "한국어",
-            "down" : "한국어를 배우는 방법"
-        },
-        "about" : {
-            "up" : "대해",
-            "down" : "웹사이트에 대해"
+    "nav": {
+        "language": {
+            "language": "언어",
+            "english": "영어",
+            "french": "프랑스어",
+            "korean": "한국어"
         }
+    },
+    "button": {
+        "more":"더 보기",
+        "less":"숨기기",
+        "next":"다음 보기",
+        "prev":"이전 보기"
+    },
+    "intro" : {
+        "title" : "안녕하세요! 저는 그렉입니다",
+        "presentation" : ["프랑스에서 활동하는 소프트웨어 엔지니어 입니다",
+                          "React JS를 배우기 위해 이 웝사이트 만들었습니다"],
+        "familiarSkills" : "제가 아주 잘 다루는 언어들입니다",
+        "otherSkills" : "또한 다룰 줄 아는 언어들입니다:",
+        "footer" : "저는 항상 더 많이 배우고 싶습니다!"
+    },
+    "work" : {
+        "title" : "일",
+        "content" : ["2016년5월부터 2018년5월까지 <a href=\"https://www.soprabanking.com/\" target=\"_blank\">Sopra Banking</a>에서 소프트웨어 엔지니어로 일했습니다",
+                     "이후 한국에서 여행 및 휴식의 시간을 보내고 유럽으로 돌아온 현재, 풀스택 개발자로서의 일을 찾고 있습니다."]
+
     }
     ,
+    "contact" : {
+        "title" : "연락처",
+        "content" : "질문 있으면 연락해주십시오!"
+    },
+    "resume" : {
+        "title" : "이력서",
+        "description" : "저의 이력서가 여기에 있습니다.<br/> 또한, 원하신다면, <a href=\"/CV.pdf\" download>여기를</a> 눌러서 다운로드 할 수 있습니다",
+        "section" : [
+            {
+                "title" : "학력",
+                "subsection" : [
+                    {"dt":"2012년-2016년", "dd":"Ecole Nationale Supérieure d'Ingénieurs de Caen, 졸업, 캉, 프랑스: 컴퓨터과학 전공 석사. 전자은행 특수전공 "},
+                    {"dt":"2015년-2016년", "dd":"캉 노르망디 대학교,  졸업, 캉, 프랑스: 컴퓨터 과학 전공 석사"},
+                    {"dt":"2010년-2012년", "dd":"Lycée Chaptal, 파리, 프랑스: 그랑제콜 준비과정: 수학과 물리학 엘리트 고등교육기관으로 소수정예 특수대학"},
+                    {"dt":"2010년","dd":"Lycée Auguste Angellier, 됭케르크, 프랑스: 수능, 수학 특별함."}
+                ]
+            },
+            {
+                "title" : "경력",
+                "subsection" : [
+                    {"dt":"2016년8월-2018년5월","dd":"소프트웨어 엔지니어, Sopra Banking Software, 므동, 프랑스"}
+                ],
+                "description":"⇨ Project Samba : ATM 소프트웨어 거래 계정 유지 밎 관리",
+                "tasks":"<ul><li>Analysis and correction of software anomalies</li><li>Conception of software evolutions, redaction of the technical documentation</li><li>Integration and delivery to the client</li><li>Regression testing, Acceptation testing</li>"
+            },
+            {
+                "title" : "인턴십",
+                "subsection" : [
+                    {"dt":"2016년5월-2016년8월", "dd":"ATM 소프트웨어 특징의 추가, Sopra Banking Software, 베리지빌라쿠브레, 프랑스 "},
+                    {"dt":"2015년5월-2015년7월", "dd":"Keccak와 Keccak 취약성에 대한 연구, Gjøvik, Gjøvik 대학교, 노르웨이"}
+                ]
+            },
+            {
+                "title" : "Projects 프로젝트",
+                "subsection" : [
+                    {"dt":"2016년10월-2017년2월", "dd":"Study on the implementation of a MPI : Purchase or Development ?, Opsise, work in pairs."},
+                    {"dt":"2014년10월-2015년5월", "dd":"Programmation in ANSI-C of the cryptoalgorithm E0, for the Ensicaen, work in pairs"}
+                ]
+            },
+            {
+                "title" : "프로그래밍 기술",
+                "subsection": [
+                    {"dt":"언어", "dd":"C, C++, Java, Python"},
+                    {"dt":"웹", "dd": "HTML5/CSS3, JavaScript ES6, node.js, React JS, Ajax"},
+                    {"dt":"IDE", "dd":"Eclipse, Visual Studio Code, SQL Developper, Code Blocks, Sublime Text"},
+                    {"dt":"다른 소프트웨어", "dd":"Kanest, HP Quality Center Software"}
+                ]
+            },
+            {
+                "title" : "전자 은행 기술",
+                "subsection": [
+                    {"dt":"프로토콜", "dd":"DIEGO, NDC"},
+                    {"dt":"ISO", "dd":"EMV, ISO8583, ISO27001"}
+                ]
+            },
+            {
+                "title": "언어",
+                "subsection" :[
+                    {"dt":"불어", "dd":"모국어"},
+                    {"dt":"영어", "dd":"유창함 (TOEIC 950점)"},
+                    {"dt":"독일어", "dd":"고급"},
+                    {"dt":"한국어", "dd":"중간"}
+                ]
+            },
+            {
+                "title": "기타 ",
+                "subsection" :[
+                   {"dt":"여행", "dd":"아시아 여행 및 6개월 간의 한국 거주 경험"},
+                   {"dt":"스포츠", "dd":"12년 경력의 테니스, 배드민턴, 축구"},
+                   {"dt":"그 외", "dd":"외국인 학생에게 불어 과외 경험"}
+               ]
+            }
+        ]
+    },
     "about" : {
-        "made_with":"이 웹사이트는 Gatsby로 만들었어요"
+        "title" : "웹사이트에 대해",
+        "content": [
+            "React JS에 대한 저의 지식을 활용하여 이 웹사이트를 만들었습니다",
+            "... 그리고 일을 쉬는 동안 제 전공과 관련있는 하고 싶었습니다.",
+            "이 사이트는 아래의 프로그램들 사용하여 만들었습디다:"
+          ]
     }   
 }

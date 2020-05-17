@@ -1,4 +1,12 @@
 {
+    "nav": {
+        "language": {
+            "language": "Language",
+            "english": "English",
+            "french": "French",
+            "korean": "Korean"
+        }
+    },
     "button": {
         "more":"More",
         "less":"Less",
