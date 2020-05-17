@@ -16,6 +16,10 @@ const Layout = ({ children }) => (
             "sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv",
           crossOrigin: "anonymous",
         },
+        {
+          rel:"stylesheet", type:"text/css", href:"//fonts.googleapis.com/css?family=Iceland"
+        },
+        {rel:"stylesheet", href:"https://fonts.googleapis.com/css?family=Noto+Serif+KR&display=swap"}
       ]}
     />
     <Global styles={globalStyles} />

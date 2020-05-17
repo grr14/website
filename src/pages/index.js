@@ -13,7 +13,7 @@ import Contact from "../components/Contact"
 
 import { LEFT, DOWN, RIGHT, UP } from "../utils"
 
-import i18n from "./i18n"
+import i18n from "../i18n"
 
 const pages = [
   { key: "intro", Component : Intro },

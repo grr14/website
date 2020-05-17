@@ -65,7 +65,7 @@ export const ArrowButton = styled(Button)`
 `
 
 const animation_appear_from_left =`
--webkit-animation-name: fadeInLeftBig;
+  -webkit-animation-name: fadeInLeftBig;
   animation-name: fadeInLeftBig;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -75,8 +75,8 @@ const animation_appear_from_left =`
   @-webkit-keyframes fadeInLeftBig {
   0% {
   opacity: 0;
-  -webkit-transform: translate3d(-2000px, 0, 0);
-  transform: translate3d(-2000px, 0, 0);
+  -webkit-transform: translate3d(2000px, 0, 0);
+  transform: translate3d(2000px, 0, 0);
   }
   100% {
   opacity: 1;
@@ -87,8 +87,8 @@ const animation_appear_from_left =`
   @keyframes fadeInLeftBig {
   0% {
   opacity: 0;
-  -webkit-transform: translate3d(-2000px, 0, 0);
-  transform: translate3d(-2000px, 0, 0);
+  -webkit-transform: translate3d(2000px, 0, 0);
+  transform: translate3d(2000px, 0, 0);
   }
   100% {
   opacity: 1;
@@ -109,8 +109,8 @@ const animation_rotate_in=`
   0% {
   -webkit-transform-origin: center;
   transform-origin: center;
-  -webkit-transform: rotate3d(0, 0, 1, -200deg);
-  transform: rotate3d(0, 0, 1, -200deg);
+  -webkit-transform: rotate3d(0, 0, 1, -600deg);
+  transform: rotate3d(0, 0, 1, -600deg);
   opacity: 0;
   }
   100% {
@@ -125,8 +125,8 @@ const animation_rotate_in=`
   0% {
   -webkit-transform-origin: center;
   transform-origin: center;
-  -webkit-transform: rotate3d(0, 0, 1, -200deg);
-  transform: rotate3d(0, 0, 1, -200deg);
+  -webkit-transform: rotate3d(0, 0, 1, -600deg);
+  transform: rotate3d(0, 0, 1, -600deg);
   opacity: 0;
   }
   100% {
@@ -269,20 +269,20 @@ export const ScoreDisplay = styled("div")`
     position: absolute;
     text-transform: uppercase;
     bottom: 40px;
-    left: 40%;
-    font-family: ocr-a-std,monospace;
+    left: 5%;
+    font-family: Iceland;
     font-size: ${({score}) => {
       if(score < 500) {
-        return "1.6em"
+        return "2em"
       }
       else if(score >=500 && score < 1000){
-        return "1.9em"
+        return "2.5em"
       }
       else if(score >= 1000 && score < 1500) {
-        return "2.2em"
+        return "3em"
       }
       else {
-        return "2.5em"
+        return "3.5em"
       }
     }
     }; 

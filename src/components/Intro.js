@@ -93,6 +93,8 @@ const IntroWithData = ({
     }, 2000)
   }, [isMoving, index])
 
+  const isOpened = currentSectionIdx === 0 ? true : false  
+
   const { t } = useTranslation()
 
   return (
@@ -104,7 +106,7 @@ const IntroWithData = ({
         <Transition appear in={!points} timeout={{ enter: 2000, exit: 0 }}>
           {(status) => {
             return (
-              <PictureContainer status={status} onClick={changePicture}>
+              <PictureContainer status={status} onClick={changePicture} isOpened={isOpened}>
                 {status === ENTERING ? (
                   <RisingPicture>
                     <Image

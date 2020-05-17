@@ -18,9 +18,11 @@ export const globalStyles = css`
     transition: font-size 0.420s ease-in-out;
     background-color: #F0FFFF;
     font-size: 14px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
-      "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial,
-      sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: 'Noto Serif KR', serif;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
     ${mq[1]} {
       overflow: hidden;
     }

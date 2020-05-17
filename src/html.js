@@ -40,6 +40,9 @@ export default class HTML extends React.Component {
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
           {this.props.postBodyComponents}
+          <script data-goatcounter="https://grr14.goatcounter.com/count"
+                  async src="//gc.zgo.at/count.js">
+          </script>
         </body>
       </html>
     );
