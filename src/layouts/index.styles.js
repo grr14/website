@@ -16,7 +16,7 @@ export const Main = styled("main")`
 export const globalStyles = css`
   body {
     transition: font-size 0.42s ease-in-out;
-    background-color: #c4c6e7;
+    background-color: #eaeaea;
     font-size: 14px;
     font-family: "Noto Serif KR", serif;
     -webkit-user-select: none; /* Safari */

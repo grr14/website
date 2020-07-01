@@ -35,7 +35,7 @@ export const HeaderTitle = styled("h1")`
   }
   ${mq[1]} {
     visibility: visible;
-    color: #f0ffff;
+    color: #eaeaea;
     font-family: Iceland;
     margin-left: 20px;
     font-size: 3em;
