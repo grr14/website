@@ -47,7 +47,6 @@ const About = () => {
           <ListItem>react i18next</ListItem>
         </List>
       </ResponsiveFlexSection>
-      
     </Section>
   )
 }

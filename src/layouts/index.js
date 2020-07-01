@@ -17,9 +17,15 @@ const Layout = ({ children }) => (
           crossOrigin: "anonymous",
         },
         {
-          rel:"stylesheet", type:"text/css", href:"//fonts.googleapis.com/css?family=Iceland"
+          rel: "stylesheet",
+          type: "text/css",
+          href: "//fonts.googleapis.com/css?family=Iceland",
         },
-        {rel:"stylesheet", href:"https://fonts.googleapis.com/css?family=Noto+Serif+KR&display=swap"}
+        {
+          rel: "stylesheet",
+          href:
+            "https://fonts.googleapis.com/css?family=Noto+Serif+KR&display=swap",
+        },
       ]}
     />
     <Global styles={globalStyles} />

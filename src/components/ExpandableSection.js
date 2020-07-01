@@ -1,7 +1,10 @@
 import React, { useRef, useEffect } from "react"
 import { Transition } from "react-transition-group"
 
-import { ExpandableSectionWrapper, ScrollingSection } from "./ExpandableSection.styles"
+import {
+  ExpandableSectionWrapper,
+  ScrollingSection,
+} from "./ExpandableSection.styles"
 
 const ExpandableSection = ({
   sections,

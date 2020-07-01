@@ -15,11 +15,11 @@ export const ExpandableSectionWrapper = styled("div")(
 
 export const ScrollingSection = styled("div")(
   ({ difference, prevDifference, status }) => {
-    let transform = "translateY(0)";
+    let transform = "translateY(0)"
     if (difference !== 0) {
-      transform = `translateY(${getTransformFromDifference(difference)}%)`;
+      transform = `translateY(${getTransformFromDifference(difference)}%)`
     } else if (status === ENTERING) {
-      transform = `translateY(${getTransformFromDifference(prevDifference)}%)`;
+      transform = `translateY(${getTransformFromDifference(prevDifference)}%)`
     }
     return `
       width: 100%;

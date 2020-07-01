@@ -2,7 +2,12 @@ import React, { useState, useCallback, useEffect } from "react"
 import { Transition } from "react-transition-group"
 import { useStaticQuery, graphql } from "gatsby"
 
-import { PageWrapper, ArrowButtonsContainer, ArrowButton, ScoreDisplay } from "../components/index.styles"
+import {
+  PageWrapper,
+  ArrowButtonsContainer,
+  ArrowButton,
+  ScoreDisplay,
+} from "../components/index.styles"
 import GlobalHeader from "../components/Header"
 import Layout from "../layouts"
 import Intro from "../components/Intro"
@@ -16,11 +21,11 @@ import { LEFT, DOWN, RIGHT, UP } from "../utils"
 import i18n from "../i18n"
 
 const pages = [
-  { key: "intro", Component : Intro },
-  { key: "work", Component : Work },
-  { key: "about", Component : About },
-  { key: "resume", Component : Resume },
-  { key: "contact", Component : Contact }
+  { key: "intro", Component: Intro },
+  { key: "work", Component: Work },
+  { key: "about", Component: About },
+  { key: "resume", Component: Resume },
+  { key: "contact", Component: Contact },
 ]
 
 const ArrowButtons = ({
@@ -61,12 +66,16 @@ const query = graphql`
 `
 
 const InitPages = (numsSections, currentPageIdx) => {
-  const [prevSections, setPrevSections] = useState(Array(numsSections.length).fill(-1))
-  const [currentSections, setCurrentSections] = useState(Array(numsSections.length).fill(-1))
+  const [prevSections, setPrevSections] = useState(
+    Array(numsSections.length).fill(-1)
+  )
+  const [currentSections, setCurrentSections] = useState(
+    Array(numsSections.length).fill(-1)
+  )
   const [isMoving, setIsMoving] = useState(false)
 
   const goToNextSection = useCallback(() => {
-    setCurrentSections(originalSections => {
+    setCurrentSections((originalSections) => {
       const newSections = [...originalSections]
       newSections[currentPageIdx] += 1
       if (newSections[currentPageIdx] < numsSections[currentPageIdx]) {
@@ -85,7 +94,7 @@ const InitPages = (numsSections, currentPageIdx) => {
   }, [currentPageIdx])
 
   const goToPrevSection = useCallback(() => {
-    setCurrentSections(originalSections => {
+    setCurrentSections((originalSections) => {
       if (originalSections[currentPageIdx] === -1) {
         return originalSections
       }
@@ -99,7 +108,8 @@ const InitPages = (numsSections, currentPageIdx) => {
     })
   }, [currentPageIdx])
 
-  const nextSectionExists = currentSections[currentPageIdx] < numsSections[currentPageIdx] - 1
+  const nextSectionExists =
+    currentSections[currentPageIdx] < numsSections[currentPageIdx] - 1
   const prevSectionExists = currentSections[currentPageIdx] > -1
 
   return {
@@ -120,13 +130,11 @@ const IndexPage = () => {
   const [score, setScore] = useState(0)
   const data = useStaticQuery(query)
   const orderedNumSections = []
-  data.allDataJson.nodes.forEach(
-    ({ key, numSections }) => {
-      orderedNumSections[
-        pages.findIndex(pageObj => pageObj.key === key)
-      ] = numSections
-    }
-  )
+  data.allDataJson.nodes.forEach(({ key, numSections }) => {
+    orderedNumSections[
+      pages.findIndex((pageObj) => pageObj.key === key)
+    ] = numSections
+  })
   const {
     currentSections,
     prevSections,
@@ -142,7 +150,7 @@ const IndexPage = () => {
   const prevPageExists = currentPageIdx > 0
 
   const goToPrevPage = useCallback(() => {
-    setCurrentPageIdx(oldPageIdx => {
+    setCurrentPageIdx((oldPageIdx) => {
       if (oldPageIdx === 0) return oldPageIdx
       setPrevPageIdx(oldPageIdx)
       return oldPageIdx - 1
@@ -150,7 +158,7 @@ const IndexPage = () => {
   }, [])
 
   const goToNextPage = useCallback(() => {
-    setCurrentPageIdx(oldPageIdx => {
+    setCurrentPageIdx((oldPageIdx) => {
       if (oldPageIdx === pages.length - 1) return oldPageIdx
       setPrevPageIdx(oldPageIdx)
       return oldPageIdx + 1
@@ -160,7 +168,7 @@ const IndexPage = () => {
   useEffect(() => {
     function onKeyDown(e) {
       switch (e.key) {
-        case "Up": 
+        case "Up":
         case "ArrowUp":
           goToNextSection()
           break
@@ -183,9 +191,9 @@ const IndexPage = () => {
     }
     return () => document && document.removeEventListener("keydown", onKeyDown)
   }, [currentPageIdx])
-  
+
   const handleLanguage = (language) => {
-    switch(language){
+    switch (language) {
       case "en":
         i18n.changeLanguage("en")
         break
@@ -202,7 +210,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <GlobalHeader handleLanguage={handleLanguage}/>
+      <GlobalHeader handleLanguage={handleLanguage} />
       {pages.map((pageObj, idx) => (
         <Transition
           in={idx === currentPageIdx}
@@ -240,8 +248,7 @@ const IndexPage = () => {
         downDisabled={!prevSectionExists}
         rightDisabled={!nextPageExists}
       />
-      { score > 0 && <ScoreDisplay score={score}>Score: {score}</ScoreDisplay>}
-  
+      {score > 0 && <ScoreDisplay score={score}>Score: {score}</ScoreDisplay>}
     </Layout>
   )
 }

@@ -1,27 +1,27 @@
-import React from 'react';
+import React from "react"
 
-let stylesStr;
+let stylesStr
 if (process.env.NODE_ENV === `production`) {
   try {
-    stylesStr = require(`!raw-loader!../public/styles.css`);
+    stylesStr = require(`!raw-loader!../public/styles.css`)
   } catch (e) {
-    console.log(e);
+    console.log(e)
   }
 }
 
 export default class HTML extends React.Component {
   render() {
-    let css;
+    let css
     if (process.env.NODE_ENV === `production`) {
       css = (
         <style
           id="gatsby-inlined-css"
           dangerouslySetInnerHTML={{ __html: stylesStr }}
         />
-      );
+      )
     }
     return (
-      <html {...this.props.htmlAttributes} >
+      <html {...this.props.htmlAttributes}>
         <head>
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
@@ -40,11 +40,13 @@ export default class HTML extends React.Component {
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
           {this.props.postBodyComponents}
-          <script data-goatcounter="https://grr14.goatcounter.com/count"
-                  async src="//gc.zgo.at/count.js">
-          </script>
+          <script
+            data-goatcounter="https://grr14.goatcounter.com/count"
+            async
+            src="//gc.zgo.at/count.js"
+          ></script>
         </body>
       </html>
-    );
+    )
   }
 }

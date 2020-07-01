@@ -16,10 +16,8 @@ export const ButtonIcon = styled("i")`
   transition: 0.18s transform ease-in-out;
 `
 
-
 export const NavButtonContainer = styled("div")`
-  margin-top: ${({ marginTop }) =>
-    marginTop == null ? 20 : marginTop}px;
+  margin-top: ${({ marginTop }) => (marginTop == null ? 20 : marginTop)}px;
   margin-right: ${({ marginRight }) =>
     marginRight == null ? 0 : marginRight}px;
   align-self: auto;

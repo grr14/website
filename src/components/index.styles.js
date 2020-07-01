@@ -52,19 +52,18 @@ export const ArrowButton = styled(Button)`
   display: flex;
   justify-content: center;
   align-items: center;
-  grid-row: ${({ direction }) =>
-    direction === UP ? 1 : 2};
+  grid-row: ${({ direction }) => (direction === UP ? 1 : 2)};
   grid-column: ${({ direction }) => {
     if (direction === LEFT) {
-      return 1;
+      return 1
     } else if (direction === RIGHT) {
-      return 3;
+      return 3
     }
-    return 2;
+    return 2
   }};
 `
 
-const animation_appear_from_left =`
+const animation_appear_from_left = `
   -webkit-animation-name: fadeInLeftBig;
   animation-name: fadeInLeftBig;
   -webkit-animation-duration: 1s;
@@ -97,7 +96,7 @@ const animation_appear_from_left =`
   }
 `
 
-const animation_rotate_in=`
+const animation_rotate_in = `
   -webkit-animation-name: rotateIn;
   animation-name: rotateIn;
   -webkit-animation-duration: 1s;
@@ -138,7 +137,7 @@ const animation_rotate_in=`
   }
 `
 
-const animation_wobble=`
+const animation_wobble = `
 -webkit-animation-name: wobble;
 animation-name: wobble;
 -webkit-animation-duration: 1s;
@@ -207,7 +206,7 @@ transform: none;
 }
 `
 
-const animation_lightspeed=`
+const animation_lightspeed = `
 -webkit-animation-name: lightSpeedIn;
 animation-name: lightSpeedIn;
 -webkit-animation-timing-function: ease-out;
@@ -271,35 +270,27 @@ export const ScoreDisplay = styled("div")`
     bottom: 40px;
     left: 5%;
     font-family: Iceland;
-    font-size: ${({score}) => {
-      if(score < 500) {
+    font-size: ${({ score }) => {
+      if (score < 500) {
         return "2em"
-      }
-      else if(score >=500 && score < 1000){
+      } else if (score >= 500 && score < 1000) {
         return "2.5em"
-      }
-      else if(score >= 1000 && score < 1500) {
+      } else if (score >= 1000 && score < 1500) {
         return "3em"
-      }
-      else {
+      } else {
         return "3.5em"
       }
-    }
-    }; 
+    }}; 
 
-    ${({score}) => {
-      if(score < 500) {
-        return {animation_appear_from_left}
+    ${({ score }) => {
+      if (score < 500) {
+        return { animation_appear_from_left }
+      } else if (score >= 500 && score < 1000) {
+        return { animation_wobble }
+      } else if (score >= 1000 && score < 1500) {
+        return { animation_rotate_in }
+      } else {
+        return { animation_lightspeed }
       }
-      else if(score >=500 && score < 1000){
-        return {animation_wobble}
-      }
-      else if(score >= 1000 && score < 1500) {
-        return {animation_rotate_in}
-      }
-      else {
-        return {animation_lightspeed}
-      }
-    }
-    }; 
+    }}; 
 `

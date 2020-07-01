@@ -1,4 +1,4 @@
-export * from './constants'
+export * from "./constants"
 
 export const getTransformFromDifference = (difference) => {
   if (difference < 0) {

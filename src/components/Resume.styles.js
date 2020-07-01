@@ -25,14 +25,14 @@ export const HideOnMobile = styled("p")`
 `
 
 export const Dl = styled("dl")`
-  margin-left:20px;
+  margin-left: 20px;
 `
 
 export const Dt = styled("dt")`
-  font-size:1.4em;
+  font-size: 1.4em;
 `
 
 export const Dd = styled("dd")`
-  font-size:1.2em;
-  margin-left:40px;
+  font-size: 1.2em;
+  margin-left: 40px;
 `

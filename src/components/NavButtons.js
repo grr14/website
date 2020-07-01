@@ -1,7 +1,7 @@
 import React from "react"
 import { NavButton, ButtonIcon, NavButtonContainer } from "./NavButtons.styles"
 
-import { useTranslation} from "react-i18next"
+import { useTranslation } from "react-i18next"
 
 const NavButtons = ({
   numSections,
@@ -11,14 +11,12 @@ const NavButtons = ({
   marginTop,
   marginRight,
 }) => {
-
   const buttons = []
   const { t } = useTranslation()
 
   if (currentSectionIdx === -1) {
     buttons.push({ isNextButton: true, buttonText: t("button:more") })
-  } 
-  else {
+  } else {
     if (currentSectionIdx < numSections - 1) {
       buttons.push({ isNextButton: true, buttonText: t("button:next") })
     }

@@ -2,10 +2,16 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 
-import { Section, FlexColumnContainer, FlexSection, Title, FlexRowContainer } from "./common.styles"
+import {
+  Section,
+  FlexColumnContainer,
+  FlexSection,
+  Title,
+  FlexRowContainer,
+} from "./common.styles"
 import { SopraLogo } from "./Work.styles"
 
-import { useTranslation} from "react-i18next"
+import { useTranslation } from "react-i18next"
 
 const query = graphql`
   query getWorkData {

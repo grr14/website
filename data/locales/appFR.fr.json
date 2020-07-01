@@ -1,112 +1,157 @@
 {
-    "nav": {
-        "language": {
-            "language": "Langage",
-            "english": "Anglais",
-            "french": "Français",
-            "korean": "Coréen"
-        }
-    },
-    "button": {
-        "more":"Plus",
-        "less":"Moins",
-        "next":"Suivant",
-        "prev":"Précédent"
-    },
-    "intro" : {
-        "title" : "Bonjour ! Je suis Grégory.",
-        "presentation" : ["Je suis un développeur logiciel français.",
-                          "J'ai fait ce site afin d'apprendre et de progresser en React JS."],
-        "familiarSkills" : "J'utilise le plus souvent :",
-        "otherSkills" : "J'ai également travaillé avec:",
-        "footer" : "Je suis toujours prêt à en apprendre plus !"
-    },
-    "work" : {
-        "title" : "Travail",
-        "content" : ["J'ai travaillé dans l'industrie bancaire pour <a href=\"https://www.soprabanking.com/\" target=\"_blank\">Sopra Banking Software</a> en tant qu'ingénieur en développement logiciel de Mai 2016 à Mai 2018.",
-                     "Après avoir pris une pause dans ma vie professionnelle afin de voyager et d'aller vivre en Corée du Sud, je suis maintenant à la recherche d'un emploi de développeur full-stack."]
-
-    },
-    "contact" : {
-        "title" : "Contact",
-        "content" : "N'hésitez pas à me contacter à la moindre question !"
-    },
-    "resume" : {
-        "title" : "Curriculum Vitae",
-        "description" : "Mon CV est présenté plus en détail dans cette section.<br/>Vous pouvez également le télécharger en cliquant <a href=\"/CV.pdf\" download>ici</a>.",
-        "section" : [
-            {
-                "title" : "Formation",
-                "subsection" : [
-                    {"dt":"2012-2016", "dd":"Ecole d'Ingénieurs en Informatique, spécialisation dans le domaine bancaire (paiements électroniques), Ecole Nationale Supérieure d'Ingénieurs de Caen, Caen, France"},
-                    {"dt":"2015-2016", "dd":"Master 2 E-secure en Securité Informatique (en parallèle), Université de Caen Basse-Normandie, Caen, France"},
-                    {"dt":"2010-2012", "dd":"Classes préparatoires MPSI/MP, Lycée Chaptal, Paris, France"},
-                    {"dt":"2010","dd":"Baccalauréat scientifique spécialité Mathématiques, Mention Bien, Lycée Auguste Angellier, Dunkerque, France"}
-                ]
-            },
-            {
-                "title" : "Experience",
-                "subsection" : [
-                    {"dt":"Août 2016 - Mai 2018","dd":"Ingénieur en développement logiciel, Sopra Banking Software, Meudon, France"}
-                ],
-                "description":"⇨ Projet Samba : Maintenance du Gestionnaire de GAB Stecard pour le compte de Transactis",
-                "tasks":"<ul><li>Analyse et correction des anomalies logicielles</li><li>Conception des évolutions logicielles, rédaction de la documentation technique</li><li>Intégration et livraison au client</li><li>Tests de non-régression, recette fonctionnelle</li>"
-            },
-            {
-                "title" : "Stages",
-                "subsection" : [
-                    {"dt":"Mai 2016 - Août 2016", "dd":"Ajout de fonctionnalités sur GAB, Sopra Banking Software, Vélizy-Villacoublay, France"},
-                    {"dt":"Mai 2015 - Août 2015", "dd":"Etude de la fonction Keccak et de ses vulnérabilités, Université de Gjøvik, Gjøvik, Norvège"}
-                ]
-            },
-            {
-                "title" : "Projets",
-                "subsection" : [
-                    {"dt":"Octobre 2016 - Février 2017", "dd":"Etude sur l'implémentation d'un MPI : Achat ou Développement ?, Opsise, travail en binôme."},
-                    {"dt":"Octobre 2014 - Avril 2015", "dd":"Programmation en ANSI-C du cryptoalgorithme E0, pour l'ENSICAEN, travail en binôme."}
-                ]
-            },
-            {
-                "title" : "Compétences - Programmation",
-                "subsection": [
-                    {"dt":"Langages", "dd":"C, C++, Java, Python"},
-                    {"dt":"Web", "dd": "HTML5/CSS3, JavaScript ES6, node.js, React JS, Ajax"},
-                    {"dt":"IDE", "dd":"Eclipse, Visual Studio Code, SQL Developper, Code Blocks, Sublime Text"},
-                    {"dt":"Autres", "dd":"Kanest, HP Quality Center Software"}
-                ]
-            },
-            {
-                "title" : "Compétences - Monétique",
-                "subsection": [
-                    {"dt":"Protocoles", "dd":"DIEGO, NDC"},
-                    {"dt":"ISO", "dd":"EMV, ISO8583, ISO27001"}
-                ]
-            },
-            {
-                "title": "Langues",
-                "subsection" :[
-                    {"dt":"Français", "dd":"Langue maternelle"},
-                    {"dt":"Anglais", "dd":"Bilingue ( Score TOEIC: 950)"},
-                    {"dt":"Allemand", "dd":"Avancé (Niveau B2)"},
-                    {"dt":"Coréen", "dd":"Intermédiaire"}
-                ]
-            },
-            {
-                "title": "Divers",
-                "subsection" :[
-                   {"dt":"Voyages", "dd":"6 mois (Septembre 2019-Mars 2020) en Corée du Sud, voyages en Asie."},
-                   {"dt":"Sports", "dd":"Tennis en compétition pendant 12 ans, Badminton, Football"},
-                   {"dt":"Autres", "dd":"Enseignement du français à des étudiants étrangers"}
-               ]
-            }
+  "nav": {
+    "language": {
+      "language": "Langage",
+      "english": "Anglais",
+      "french": "Français",
+      "korean": "Coréen"
+    }
+  },
+  "button": {
+    "more": "Plus",
+    "less": "Moins",
+    "next": "Suivant",
+    "prev": "Précédent"
+  },
+  "intro": {
+    "title": "Bonjour ! Je suis Grégory.",
+    "presentation": [
+      "Je suis un développeur logiciel français.",
+      "J'ai fait ce site afin d'apprendre et de progresser en React JS."
+    ],
+    "familiarSkills": "J'utilise le plus souvent :",
+    "otherSkills": "J'ai également travaillé avec:",
+    "footer": "Je suis toujours prêt à en apprendre plus !"
+  },
+  "work": {
+    "title": "Travail",
+    "content": [
+      "J'ai travaillé dans l'industrie bancaire pour <a href=\"https://www.soprabanking.com/\" target=\"_blank\">Sopra Banking Software</a> en tant qu'ingénieur en développement logiciel de Mai 2016 à Mai 2018.",
+      "Après avoir pris une pause dans ma vie professionnelle afin de voyager et d'aller vivre en Corée du Sud, je suis maintenant à la recherche d'un emploi de développeur full-stack."
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "content": "N'hésitez pas à me contacter à la moindre question !"
+  },
+  "resume": {
+    "title": "Curriculum Vitae",
+    "description": "Mon CV est présenté plus en détail dans cette section.<br/>Vous pouvez également le télécharger en cliquant <a href=\"/CV.pdf\" download>ici</a>.",
+    "section": [
+      {
+        "title": "Formation",
+        "subsection": [
+          {
+            "dt": "2012-2016",
+            "dd": "Ecole d'Ingénieurs en Informatique, spécialisation dans le domaine bancaire (paiements électroniques), Ecole Nationale Supérieure d'Ingénieurs de Caen, Caen, France"
+          },
+          {
+            "dt": "2015-2016",
+            "dd": "Master 2 E-secure en Securité Informatique (en parallèle), Université de Caen Basse-Normandie, Caen, France"
+          },
+          {
+            "dt": "2010-2012",
+            "dd": "Classes préparatoires MPSI/MP, Lycée Chaptal, Paris, France"
+          },
+          {
+            "dt": "2010",
+            "dd": "Baccalauréat scientifique spécialité Mathématiques, Mention Bien, Lycée Auguste Angellier, Dunkerque, France"
+          }
         ]
-    },
-    "about" : {
-        "title" : "À propos",
-        "content": [
-            "J'ai réalisé ce site afin de mettre en pratique mes connaissances en React JS.",
-            "... et également afin de rester en contact avec le monde de la programmation pendant que je  n'étais plus employé.",
-            "Ce site a été écrit à l'aide de : "
-          ]
-    }      
+      },
+      {
+        "title": "Experience",
+        "subsection": [
+          {
+            "dt": "Août 2016 - Mai 2018",
+            "dd": "Ingénieur en développement logiciel, Sopra Banking Software, Meudon, France"
+          }
+        ],
+        "description": "⇨ Projet Samba : Maintenance du Gestionnaire de GAB Stecard pour le compte de Transactis",
+        "tasks": "<ul><li>Analyse et correction des anomalies logicielles</li><li>Conception des évolutions logicielles, rédaction de la documentation technique</li><li>Intégration et livraison au client</li><li>Tests de non-régression, recette fonctionnelle</li>"
+      },
+      {
+        "title": "Stages",
+        "subsection": [
+          {
+            "dt": "Mai 2016 - Août 2016",
+            "dd": "Ajout de fonctionnalités sur GAB, Sopra Banking Software, Vélizy-Villacoublay, France"
+          },
+          {
+            "dt": "Mai 2015 - Août 2015",
+            "dd": "Etude de la fonction Keccak et de ses vulnérabilités, Université de Gjøvik, Gjøvik, Norvège"
+          }
+        ]
+      },
+      {
+        "title": "Projets",
+        "subsection": [
+          {
+            "dt": "Octobre 2016 - Février 2017",
+            "dd": "Etude sur l'implémentation d'un MPI : Achat ou Développement ?, Opsise, travail en binôme."
+          },
+          {
+            "dt": "Octobre 2014 - Avril 2015",
+            "dd": "Programmation en ANSI-C du cryptoalgorithme E0, pour l'ENSICAEN, travail en binôme."
+          }
+        ]
+      },
+      {
+        "title": "Compétences - Programmation",
+        "subsection": [
+          { "dt": "Langages", "dd": "C, C++, Java, Python" },
+          {
+            "dt": "Web",
+            "dd": "HTML5/CSS3, JavaScript ES6, node.js, React JS, Ajax"
+          },
+          {
+            "dt": "IDE",
+            "dd": "Eclipse, Visual Studio Code, SQL Developper, Code Blocks, Sublime Text"
+          },
+          { "dt": "Autres", "dd": "Kanest, HP Quality Center Software" }
+        ]
+      },
+      {
+        "title": "Compétences - Monétique",
+        "subsection": [
+          { "dt": "Protocoles", "dd": "DIEGO, NDC" },
+          { "dt": "ISO", "dd": "EMV, ISO8583, ISO27001" }
+        ]
+      },
+      {
+        "title": "Langues",
+        "subsection": [
+          { "dt": "Français", "dd": "Langue maternelle" },
+          { "dt": "Anglais", "dd": "Bilingue ( Score TOEIC: 950)" },
+          { "dt": "Allemand", "dd": "Avancé (Niveau B2)" },
+          { "dt": "Coréen", "dd": "Intermédiaire" }
+        ]
+      },
+      {
+        "title": "Divers",
+        "subsection": [
+          {
+            "dt": "Voyages",
+            "dd": "6 mois (Septembre 2019-Mars 2020) en Corée du Sud, voyages en Asie."
+          },
+          {
+            "dt": "Sports",
+            "dd": "Tennis en compétition pendant 12 ans, Badminton, Football"
+          },
+          {
+            "dt": "Autres",
+            "dd": "Enseignement du français à des étudiants étrangers"
+          }
+        ]
+      }
+    ]
+  },
+  "about": {
+    "title": "À propos",
+    "content": [
+      "J'ai réalisé ce site afin de mettre en pratique mes connaissances en React JS.",
+      "... et également afin de rester en contact avec le monde de la programmation pendant que je  n'étais plus employé.",
+      "Ce site a été écrit à l'aide de : "
+    ]
+  }
 }

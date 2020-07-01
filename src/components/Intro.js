@@ -1,16 +1,32 @@
-import React, { useState, useCallback} from "react"
+import React, { useState, useCallback } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 import { Transition } from "react-transition-group"
 import { ENTERING } from "react-transition-group/Transition"
 
-import { Picture, PictureContainer, ScoreContainer, RisingPicture } from "./Intro.styles"
-import { List, ListItem, Section, EqualFlexColumn, FlexSection, ResponsiveFlexSection, FlexColumnContainer, BigTitle, ButtonContainer, Button } from "./common.styles"
+import {
+  Picture,
+  PictureContainer,
+  ScoreContainer,
+  RisingPicture,
+} from "./Intro.styles"
+import {
+  List,
+  ListItem,
+  Section,
+  EqualFlexColumn,
+  FlexSection,
+  ResponsiveFlexSection,
+  FlexColumnContainer,
+  BigTitle,
+  ButtonContainer,
+  Button,
+} from "./common.styles"
 
 import ExpandableSection from "./ExpandableSection"
 import NavButtons from "./NavButtons"
 
-import { useTranslation} from "react-i18next"
+import { useTranslation } from "react-i18next"
 
 const query = graphql`
   query getIntroData {
@@ -34,12 +50,10 @@ const query = graphql`
   }
 `
 
-
 const IntroSectionTemplate = ({ introData }) => {
-
   const { t } = useTranslation()
 
-  return (  
+  return (
     <FlexColumnContainer>
       <ResponsiveFlexSection marginTop={20}>
         <EqualFlexColumn>
@@ -62,9 +76,7 @@ const IntroSectionTemplate = ({ introData }) => {
       <FlexSection marginTop={20}>{t("intro:footer")}</FlexSection>
     </FlexColumnContainer>
   )
-
-} 
-
+}
 
 const IntroWithData = ({
   data: introData,
@@ -80,20 +92,19 @@ const IntroWithData = ({
   const [index, setIndex] = useState(0)
   const changePicture = useCallback(() => {
     let pointsGained = 100
-    setScore(prevScore => prevScore + pointsGained)
+    setScore((prevScore) => prevScore + pointsGained)
     setPoints(pointsGained)
     setTimeout(() => {
       setPoints(0)
-      if(index===introData.pictures.length-1) {
+      if (index === introData.pictures.length - 1) {
         setIndex(0)
-      }
-      else {
-        setIndex(prevIndex => prevIndex+1)
+      } else {
+        setIndex((prevIndex) => prevIndex + 1)
       }
     }, 2000)
   }, [isMoving, index])
 
-  const isOpened = currentSectionIdx === 0 ? true : false  
+  const isOpened = currentSectionIdx === 0 ? true : false
 
   const { t } = useTranslation()
 
@@ -106,7 +117,11 @@ const IntroWithData = ({
         <Transition appear in={!points} timeout={{ enter: 2000, exit: 0 }}>
           {(status) => {
             return (
-              <PictureContainer status={status} onClick={changePicture} isOpened={isOpened}>
+              <PictureContainer
+                status={status}
+                onClick={changePicture}
+                isOpened={isOpened}
+              >
                 {status === ENTERING ? (
                   <RisingPicture>
                     <Image
@@ -126,8 +141,9 @@ const IntroWithData = ({
         </Transition>
       </BigTitle>
       <FlexSection marginTop={20} column={true}>
-          {t("intro:presentation.0")}<br/>
-          {t("intro:presentation.1")}
+        {t("intro:presentation.0")}
+        <br />
+        {t("intro:presentation.1")}
       </FlexSection>
       <ButtonContainer>
         <NavButtons
@@ -152,7 +168,6 @@ const IntroWithData = ({
     </Section>
   )
 }
-
 
 const Intro = (props) => {
   const data = useStaticQuery(query)

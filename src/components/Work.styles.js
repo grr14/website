@@ -4,7 +4,7 @@ import { mq } from "../utils"
 
 export const SopraLogo = styled("div")`
   display: none;
-  border:none;
+  border: none;
   ${mq[1]} {
     display: flex;
     align-items: center;

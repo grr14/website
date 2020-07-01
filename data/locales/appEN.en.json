@@ -1,113 +1,160 @@
 {
-    "nav": {
-        "language": {
-            "language": "Language",
-            "english": "English",
-            "french": "French",
-            "korean": "Korean"
-        }
-    },
-    "button": {
-        "more":"More",
-        "less":"Less",
-        "next":"Next",
-        "prev":"Prev"
-    },
-    "intro" : {
-        "title" : "Hi, I'm Gregory.",
-        "presentation" : ["I'm a software engineer from France.",
-                          "I made this website to learn and practice React JS."],
-        "familiarSkills" : "I'm most familiar with :",
-        "otherSkills" : "I've also worked with:",
-        "footer" : "I'm always looking to learn more!"
-    },
-    "work" : {
-        "title" : "Work",
-        "content" : ["I worked in the banking industry for <a href=\"https://www.soprabanking.com/\" target=\"_blank\">Sopra Banking Software</a> as a software developper engineer from May 2016 to May 2018.",
-                     "After taking a break to travel and live in South Korea, I came back to Europe and am now looking for a job as a full-stack developper."]
-
+  "nav": {
+    "language": {
+      "language": "Language",
+      "english": "English",
+      "french": "French",
+      "korean": "Korean"
     }
-    ,
-    "contact" : {
-        "title" : "Contact",
-        "content" : "Feel free to reach out if you have any questions!"
-    },
-    "resume" : {
-        "title" : "Resume",
-        "description" : "You can find a more detailed resume in this section.<br/>Or if you prefer, you can download it <a href=\"/CV.pdf\" download>here</a>.",
-        "section" : [
-            {
-                "title" : "Formation",
-                "subsection" : [
-                    {"dt":"2012-2016", "dd":"Master in Computer Engineering, specialization in Security and E-Banking, Ecole Nationale Supérieure d'Ingénieurs de Caen, Caen, France"},
-                    {"dt":"2015-2016", "dd":"Master in Computer Science E-secure, University of Caen Basse-Normandie (in parallel), Caen, France"},
-                    {"dt":"2010-2012", "dd":"Preparatory classes : two-year undergraduate intensive course in mathematics and physics, Lycée Chaptal, Paris, France"},
-                    {"dt":"2010","dd":"High School Degree, with focus on mathematics and physics. With high honors."}
-                ]
-            },
-            {
-                "title" : "Experience",
-                "subsection" : [
-                    {"dt":"August 2016-May 2018","dd":"Software Engineer, Sopra Banking Software, Meudon, France"}
-                ],
-                "description":"⇨ Project Samba : Maintenance of the ATM Manager software Stecard for the account of Transactis",
-                "tasks":"<ul><li>Analysis and correction of software anomalies</li><li>Conception of software evolutions, redaction of the technical documentation</li><li>Integration and delivery to the client</li><li>Regression testing, Acceptation testing</li>"
-            },
-            {
-                "title" : "Internships",
-                "subsection" : [
-                    {"dt":"May 2016-August 2016", "dd":"Addition of features on an ATM software, Sopra Banking Software, Vélizy-Villacoublay, France"},
-                    {"dt":"May 2015-July 2015", "dd":"Study of the Keccak function and its vulnerabilities, University of Gjøvik, Gjøvik, Norway"}
-                ]
-            },
-            {
-                "title" : "Projects",
-                "subsection" : [
-                    {"dt":"October 2016 - February 2017", "dd":"Study on the implementation of a MPI : Purchase or Development ?, Opsise, work in pairs."},
-                    {"dt":"October 2014 - April 2015", "dd":"Programmation in ANSI-C of the cryptoalgorithm E0, for the Ensicaen, work in pairs"}
-                ]
-            },
-            {
-                "title" : "Skills - Programmation",
-                "subsection": [
-                    {"dt":"Languages", "dd":"C, C++, Java, Python"},
-                    {"dt":"Web", "dd": "HTML5/CSS3, JavaScript ES6, node.js, React JS, Ajax"},
-                    {"dt":"IDE", "dd":"Eclipse, Visual Studio Code, SQL Developper, Code Blocks, Sublime Text"},
-                    {"dt":"Other softwares", "dd":"Kanest, HP Quality Center Software"}
-                ]
-            },
-            {
-                "title" : "Skills - Electronic Banking",
-                "subsection": [
-                    {"dt":"Protocols", "dd":"DIEGO, NDC"},
-                    {"dt":"ISO", "dd":"EMV, ISO8583, ISO27001"}
-                ]
-            },
-            {
-                "title": "Languages",
-                "subsection" :[
-                    {"dt":"French", "dd":"Mothertongue"},
-                    {"dt":"English", "dd":"Fluent (TOEIC Score : 950)"},
-                    {"dt":"German", "dd":"Advanced (Level B2)"},
-                    {"dt":"Korean", "dd":"Intermediate"}
-                ]
-            },
-            {
-                "title": "Miscellaneous",
-                "subsection" :[
-                   {"dt":"Travels", "dd":"Lived six months (September 2019-March 2020) in South Korea, trips around Asia"},
-                   {"dt":"Sports", "dd":"Tennis in competition for 12 years, Badminton, Football"},
-                   {"dt":"Others", "dd":"Good experience teaching french to foreign students"}
-               ]
-            }
+  },
+  "button": {
+    "more": "More",
+    "less": "Less",
+    "next": "Next",
+    "prev": "Prev"
+  },
+  "intro": {
+    "title": "Hi, I'm Gregory.",
+    "presentation": [
+      "I'm a software engineer from France.",
+      "I made this website to learn and practice React JS."
+    ],
+    "familiarSkills": "I'm most familiar with :",
+    "otherSkills": "I've also worked with:",
+    "footer": "I'm always looking to learn more!"
+  },
+  "work": {
+    "title": "Work",
+    "content": [
+      "I worked in the banking industry for <a href=\"https://www.soprabanking.com/\" target=\"_blank\">Sopra Banking Software</a> as a software developper engineer from May 2016 to May 2018.",
+      "After taking a break to travel and live in South Korea, I came back to Europe and am now looking for a job as a full-stack developper."
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "content": "Feel free to reach out if you have any questions!"
+  },
+  "resume": {
+    "title": "Resume",
+    "description": "You can find a more detailed resume in this section.<br/>Or if you prefer, you can download it <a href=\"/CV.pdf\" download>here</a>.",
+    "section": [
+      {
+        "title": "Formation",
+        "subsection": [
+          {
+            "dt": "2012-2016",
+            "dd": "Master in Computer Engineering, specialization in Security and E-Banking, Ecole Nationale Supérieure d'Ingénieurs de Caen, Caen, France"
+          },
+          {
+            "dt": "2015-2016",
+            "dd": "Master in Computer Science E-secure, University of Caen Basse-Normandie (in parallel), Caen, France"
+          },
+          {
+            "dt": "2010-2012",
+            "dd": "Preparatory classes : two-year undergraduate intensive course in mathematics and physics, Lycée Chaptal, Paris, France"
+          },
+          {
+            "dt": "2010",
+            "dd": "High School Degree, with focus on mathematics and physics. With high honors."
+          }
         ]
-    },
-    "about" : {
-        "title" : "About",
-        "content": [
-            "I made this website to practice what I learned about React JS",
-            "... and to not stay completly inactive while I was not working.",
-            "This website was made using : "
-          ]
-    }   
+      },
+      {
+        "title": "Experience",
+        "subsection": [
+          {
+            "dt": "August 2016-May 2018",
+            "dd": "Software Engineer, Sopra Banking Software, Meudon, France"
+          }
+        ],
+        "description": "⇨ Project Samba : Maintenance of the ATM Manager software Stecard for the account of Transactis",
+        "tasks": "<ul><li>Analysis and correction of software anomalies</li><li>Conception of software evolutions, redaction of the technical documentation</li><li>Integration and delivery to the client</li><li>Regression testing, Acceptation testing</li>"
+      },
+      {
+        "title": "Internships",
+        "subsection": [
+          {
+            "dt": "May 2016-August 2016",
+            "dd": "Addition of features on an ATM software, Sopra Banking Software, Vélizy-Villacoublay, France"
+          },
+          {
+            "dt": "May 2015-July 2015",
+            "dd": "Study of the Keccak function and its vulnerabilities, University of Gjøvik, Gjøvik, Norway"
+          }
+        ]
+      },
+      {
+        "title": "Projects",
+        "subsection": [
+          {
+            "dt": "October 2016 - February 2017",
+            "dd": "Study on the implementation of a MPI : Purchase or Development ?, Opsise, work in pairs."
+          },
+          {
+            "dt": "October 2014 - April 2015",
+            "dd": "Programmation in ANSI-C of the cryptoalgorithm E0, for the Ensicaen, work in pairs"
+          }
+        ]
+      },
+      {
+        "title": "Skills - Programmation",
+        "subsection": [
+          { "dt": "Languages", "dd": "C, C++, Java, Python" },
+          {
+            "dt": "Web",
+            "dd": "HTML5/CSS3, JavaScript ES6, node.js, React JS, Ajax"
+          },
+          {
+            "dt": "IDE",
+            "dd": "Eclipse, Visual Studio Code, SQL Developper, Code Blocks, Sublime Text"
+          },
+          {
+            "dt": "Other softwares",
+            "dd": "Kanest, HP Quality Center Software"
+          }
+        ]
+      },
+      {
+        "title": "Skills - Electronic Banking",
+        "subsection": [
+          { "dt": "Protocols", "dd": "DIEGO, NDC" },
+          { "dt": "ISO", "dd": "EMV, ISO8583, ISO27001" }
+        ]
+      },
+      {
+        "title": "Languages",
+        "subsection": [
+          { "dt": "French", "dd": "Mothertongue" },
+          { "dt": "English", "dd": "Fluent (TOEIC Score : 950)" },
+          { "dt": "German", "dd": "Advanced (Level B2)" },
+          { "dt": "Korean", "dd": "Intermediate" }
+        ]
+      },
+      {
+        "title": "Miscellaneous",
+        "subsection": [
+          {
+            "dt": "Travels",
+            "dd": "Lived six months (September 2019-March 2020) in South Korea, trips around Asia"
+          },
+          {
+            "dt": "Sports",
+            "dd": "Tennis in competition for 12 years, Badminton, Football"
+          },
+          {
+            "dt": "Others",
+            "dd": "Good experience teaching french to foreign students"
+          }
+        ]
+      }
+    ]
+  },
+  "about": {
+    "title": "About",
+    "content": [
+      "I made this website to practice what I learned about React JS",
+      "... and to not stay completly inactive while I was not working.",
+      "This website was made using : "
+    ]
+  }
 }

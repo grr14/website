@@ -47,7 +47,7 @@ const shake = keyframes`
   -webkit-transform: translate3d(0.75px, 0, 0) rotate(-3deg);
           transform: translate3d(0.75px, 0, 0) rotate(-3deg);
 }
-`;
+`
 
 const Container = styled("div")`
   max-width: 600px;
@@ -61,7 +61,11 @@ export const PictureContainer = styled(Container)`
   ${hvmq}{  
       overflow: visible;
       ${({ status, isOpened }) =>
-        `display: ${status === EXITED || status === EXITING || isOpened === true ? "none" : "block"};`}
+        `display: ${
+          status === EXITED || status === EXITING || isOpened === true
+            ? "none"
+            : "block"
+        };`}
 
       &:hover {
         -webkit-animation: ${shake} 0.32s cubic-bezier(.36, .07, .19, .97) infinite;
@@ -77,7 +81,7 @@ export const Picture = styled("div")(
 )
 
 export const RisingPicture = styled("div")`
-  cursor:pointer;
+  cursor: pointer;
   animation: ${rise} 2s ease-in-out forwards;
 `
 

@@ -12,20 +12,17 @@ export const SocialMediaAnchor = styled("a")`
 `
 
 export const SocialMediaIcon = styled("i")`
-  color: hsla(0,0%,0%,0.8);
+  color: hsla(0, 0%, 0%, 0.8);
   transition: 0.4s color ease-in-out;
   &:hover {
-    color: ${({media}) => {
-      if(media === "github") {
+    color: ${({ media }) => {
+      if (media === "github") {
         return "#24292E"
-      }
-      else if(media === "facebook") {
+      } else if (media === "facebook") {
         return "#1778f2"
-      }
-      else if( media === "mail") {
+      } else if (media === "mail") {
         return "#D93025"
-      }
-      else if(media === "linkedin") {
+      } else if (media === "linkedin") {
         return "#0077B5"
       }
     }};
