@@ -51,7 +51,7 @@ const ResumeSectionInfoTemplate = ({ cv_section, id }) => {
             </React.Fragment>
           ))}
         </Dl>
-        {id == 1 && (
+        {id === 1 && (
           <React.Fragment>
             <div
               style={{ fontSize: "1.2em" }}
