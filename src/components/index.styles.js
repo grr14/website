@@ -282,7 +282,7 @@ export const ScoreDisplay = styled("div")`
       }
     }}; 
 
-    ${({ score }) => {
+    animation:${({ score }) => {
       if (score < 500) {
         return { animation_appear_from_left }
       } else if (score >= 500 && score < 1000) {
@@ -292,5 +292,6 @@ export const ScoreDisplay = styled("div")`
       } else {
         return { animation_lightspeed }
       }
-    }}; 
+    }};
+  } 
 `

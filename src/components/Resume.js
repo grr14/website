@@ -79,7 +79,7 @@ const Resume = ({
   goToPrevSection,
 }) => {
   const data = useStaticQuery(query)
-  const isOpened = currentSectionIdx === -1 ? true : false
+  const isOpened = currentSectionIdx === -1
 
   const { t } = useTranslation()
 

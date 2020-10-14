@@ -53,11 +53,11 @@ const GlobalHeader = (props) => {
 
   return (
     <Header>
-      <HeaderTitle>gregoryrabas.com</HeaderTitle>
+      
       <LanguagesBar ref={node}>
         <LanguageLabel onClick={toggle}>
           {t("nav:language.language")}{" "}
-          {!visible && <i class="fas fa-caret-down"></i>}
+          <i class="fas fa-caret-down" style={{marginLeft:"10px"}}/>
         </LanguageLabel>
         {visible && (
           <LanguageWrapper>
@@ -76,6 +76,7 @@ const GlobalHeader = (props) => {
           </LanguageWrapper>
         )}
       </LanguagesBar>
+      <HeaderTitle>gregoryrabas.com</HeaderTitle>
     </Header>
   )
 }

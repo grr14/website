@@ -6,11 +6,12 @@ const textMainColor = "white"
 
 export const Header = styled("header")`
   display: none;
-
-  ${nsm} {
-    height: 6.5%;
+  ${mq[0]}{ 
+    height: 80px;
     width: 100%;
     display: flex;
+    justify-content:center;
+    align-items:center;
     background-color: ${mainColor};
     background: repeating-linear-gradient(
         45deg,
@@ -22,22 +23,19 @@ export const Header = styled("header")`
       0 / 15px 15px;
     flex-direction: row;
     justify-content: space-between;
-    padding: 10px 0 10px 0;
-    font-family: Iceland;
+    padding: 10px 0;
+    font-family: Iceland;  
   }
+ 
 `
 
 export const HeaderTitle = styled("h1")`
   visibility: hidden;
-  ${mh} {
-    font-size: 2em;
-    margin-top: -15px;
-  }
-  ${mq[1]} {
+  ${mq[0]} {
+    margin-right: 20px;
     visibility: visible;
     color: #eaeaea;
     font-family: Iceland;
-    margin-left: 20px;
     font-size: 3em;
     text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
     width: auto;
@@ -45,37 +43,40 @@ export const HeaderTitle = styled("h1")`
 `
 
 export const LanguagesBar = styled("div")`
-  ${sh} {
-    display: none;
+  display: none;
+
+  ${mq[0]}{
+    z-index: 1;
+    margin-left: 20px;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    color: ${textMainColor};
+    background: repeating-linear-gradient(
+        45deg,
+        #2b2b2b 0%,
+        #2b2b2b 10%,
+        #222222 0%,
+        #222222 50%
+      )
+      0 / 15px 15px;
   }
-  ${mw} {
-    display: none;
-  }
-  z-index: 1;
-  margin-right: 20px;
-  width: 15%;
-  display: flex;
-  flex-direction: column;
-  color: ${textMainColor};
-  background: repeating-linear-gradient(
-      45deg,
-      #2b2b2b 0%,
-      #2b2b2b 10%,
-      #222222 0%,
-      #222222 50%
-    )
-    0 / 15px 15px;
 `
 
 export const LanguageLabel = styled("span")`
-  margin: 0;
+  margin-right: 0;
   font-size: 1.6em;
   text-align: center;
   border: 1px solid ${textMainColor};
   border-radius: 25px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0 10px;
+  display:flex;
+  align-items:center;
+  justify-content:space-evenly;
   cursor: pointer;
+  max-width:160px;
   &:hover {
     filter: opacity(0.9);
     text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
@@ -91,9 +92,14 @@ export const LanguageLabel = styled("span")`
 export const LanguageWrapper = styled("div")`
   display: flex;
   flex-direction: column;
+  position:absolute;
+  top:50px;
+  padding:10px;
+  width:160px;
 `
 
 export const LanguageItem = styled("a")`
+z-index:1;
   background: repeating-linear-gradient(
       45deg,
       #2b2b2b 0%,
