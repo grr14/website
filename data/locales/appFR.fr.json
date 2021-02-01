@@ -17,7 +17,7 @@
     "title": "Bonjour ! Je suis Grégory.",
     "presentation": [
       "Je suis un développeur logiciel français.",
-      "J'ai fait ce site afin d'apprendre et de progresser en React JS."
+      "Je suis actuellement à la recherche d'un poste de développeur ReactJS!"
     ],
     "familiarSkills": "J'utilise le plus souvent :",
     "otherSkills": "J'ai également travaillé avec:",
@@ -27,7 +27,7 @@
     "title": "Travail",
     "content": [
       "J'ai travaillé dans l'industrie bancaire pour <a href=\"https://www.soprabanking.com/\" target=\"_blank\">Sopra Banking Software</a> en tant qu'ingénieur en développement logiciel de Mai 2016 à Mai 2018.",
-      "Après avoir pris une pause dans ma vie professionnelle afin de voyager et d'aller vivre en Corée du Sud, je suis maintenant à la recherche d'un emploi de développeur full-stack."
+      "Après avoir pris une pause dans ma vie professionnelle afin de voyager et d'aller vivre en Corée du Sud, puis en Suède, je suis maintenant à la recherche d'un emploi en France."
     ]
   },
   "contact": {
@@ -36,7 +36,7 @@
   },
   "resume": {
     "title": "Curriculum Vitae",
-    "description": "Mon CV est présenté plus en détail dans cette section.<br/>Vous pouvez également le télécharger en cliquant <a href=\"/CV_fr.pdf\" download>ici</a>.",
+    "description": "Mon CV est présenté plus en détail dans cette section.<br/>Vous pouvez également le télécharger en cliquant <a href=\"/CV_fr_Gregory_RABAS.pdf\" download>ici</a>.",
     "section": [
       {
         "title": "Formation",

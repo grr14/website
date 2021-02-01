@@ -12,8 +12,8 @@ i18n
   // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
     debug: true,
-    lng: "en",
-    fallbackLng: "en",
+    lng: "fr",
+    fallbackLng: "fr",
     whitelist: ["en", "fr", "kr"],
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default
