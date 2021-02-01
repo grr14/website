@@ -153,5 +153,15 @@
       "... et également afin de rester en contact avec le monde de la programmation pendant que je  n'étais plus employé.",
       "Ce site a été écrit à l'aide de : "
     ]
+  },
+  "projects": {
+    "title": "Projets",
+    "description": "Vous pouvez trouver ici mes projets persos, tous disponibles sur mon <a href=\"https://www.github.com/grr14\">github</a>.",
+    "section": [
+      {
+        "title": "pokelab.xyz",
+        "content": "<a href=\"https://www.pokelab.xyz\" target=\"__blank\">pokelab.xyz</a> est un site open-source d'informations sur l'univers de Pokémon.</br>Je l'ai contruit avec next.js, React, TypeScript, et Apollo Client pour le front-end et Apollo Server pour le back-end."
+      }
+    ]
   }
 }

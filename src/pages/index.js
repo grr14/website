@@ -15,6 +15,7 @@ import About from "../components/About"
 import Work from "../components/Work"
 import Resume from "../components/Resume"
 import Contact from "../components/Contact"
+import Projects from "../components/Projects"
 
 import { LEFT, DOWN, RIGHT, UP } from "../utils"
 
@@ -25,6 +26,7 @@ const pages = [
   { key: "work", Component: Work },
   { key: "about", Component: About },
   { key: "resume", Component: Resume },
+  { key: "projects", Component: Projects },
   { key: "contact", Component: Contact },
 ]
 
@@ -75,7 +77,7 @@ const InitPages = (numsSections, currentPageIdx) => {
   const [isMoving, setIsMoving] = useState(false)
 
   const goToNextSection = useCallback(() => {
-    setCurrentSections((originalSections) => {
+    setCurrentSections(originalSections => {
       const newSections = [...originalSections]
       newSections[currentPageIdx] += 1
       if (newSections[currentPageIdx] < numsSections[currentPageIdx]) {
@@ -94,7 +96,7 @@ const InitPages = (numsSections, currentPageIdx) => {
   }, [currentPageIdx])
 
   const goToPrevSection = useCallback(() => {
-    setCurrentSections((originalSections) => {
+    setCurrentSections(originalSections => {
       if (originalSections[currentPageIdx] === -1) {
         return originalSections
       }
@@ -132,7 +134,7 @@ const IndexPage = () => {
   const orderedNumSections = []
   data.allDataJson.nodes.forEach(({ key, numSections }) => {
     orderedNumSections[
-      pages.findIndex((pageObj) => pageObj.key === key)
+      pages.findIndex(pageObj => pageObj.key === key)
     ] = numSections
   })
   const {
@@ -150,7 +152,7 @@ const IndexPage = () => {
   const prevPageExists = currentPageIdx > 0
 
   const goToPrevPage = useCallback(() => {
-    setCurrentPageIdx((oldPageIdx) => {
+    setCurrentPageIdx(oldPageIdx => {
       if (oldPageIdx === 0) return oldPageIdx
       setPrevPageIdx(oldPageIdx)
       return oldPageIdx - 1
@@ -158,7 +160,7 @@ const IndexPage = () => {
   }, [])
 
   const goToNextPage = useCallback(() => {
-    setCurrentPageIdx((oldPageIdx) => {
+    setCurrentPageIdx(oldPageIdx => {
       if (oldPageIdx === pages.length - 1) return oldPageIdx
       setPrevPageIdx(oldPageIdx)
       return oldPageIdx + 1
@@ -192,7 +194,7 @@ const IndexPage = () => {
     return () => document && document.removeEventListener("keydown", onKeyDown)
   }, [currentPageIdx])
 
-  const handleLanguage = (language) => {
+  const handleLanguage = language => {
     switch (language) {
       case "en":
         i18n.changeLanguage("en")
@@ -217,7 +219,7 @@ const IndexPage = () => {
           timeout={{ enter: 0, exit: 400 }}
           key={idx}
         >
-          {(status) => (
+          {status => (
             <PageWrapper
               difference={idx - currentPageIdx}
               prevDifference={idx - prevPageIdx}

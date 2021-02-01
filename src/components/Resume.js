@@ -2,6 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 import {
+  HideOnMobile,
   Section,
   FlexColumnContainer,
   FlexRowContainer,
@@ -10,7 +11,7 @@ import {
   SmallTitle,
   Span,
 } from "./common.styles"
-import { HideOnMobile, Dl, Dt, Dd } from "./Resume.styles"
+import { Dl, Dt, Dd } from "./Resume.styles"
 
 import ExpandableSection from "./ExpandableSection"
 import NavButtons from "./NavButtons"
@@ -39,9 +40,12 @@ const ResumeSectionInfoTemplate = ({ cv_section, id }) => {
 
   return (
     <FlexColumnContainer>
-      <SmallTitle mobileJustifyContent="space-between">
-        {t(`resume:section.${id}.title`)}
-      </SmallTitle>
+      <SmallTitle
+        mobileJustifyContent="space-between"
+        dangerouslySetInnerHTML={{
+          __html: t(`resume:section.${id}.title`),
+        }}
+      />
       <FlexSection marginTop={0} column={true} small={true}>
         <Dl>
           {cv_section.content.map((_, idx) => (

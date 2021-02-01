@@ -16,14 +16,6 @@ export const LaunchButtonAnchor = styled("a")`
   }
 `
 
-export const HideOnMobile = styled("p")`
-  display: none;
-
-  ${mq[1]} {
-    display: inline;
-  }
-`
-
 export const Dl = styled("dl")`
   margin-left: 20px;
 `

@@ -68,11 +68,11 @@ export const FlexColumnContainer = styled(FlexRowContainer)`
 `
 
 export const FlexSection = styled("div")`
-  margin-top: ${(props) => props.marginTop / 2}px;
+  margin-top: ${props => props.marginTop / 2}px;
   ${vmq[0]} {
-    margin-top: ${(props) => props.marginTop}px;
+    margin-top: ${props => props.marginTop}px;
   }
-  font-size: ${(props) => (props.small ? "1.2em" : "1.6em")};
+  font-size: ${props => (props.small ? "1.2em" : "1.6em")};
   display: flex;
   flex-direction: ${({ column }) => (column ? "column" : "row")};
 `
@@ -93,7 +93,7 @@ export const Title = styled("header")`
   justify-content: ${({ mobileJustifyContent }) =>
     mobileJustifyContent || "flex-start"};
   align-items: center;
-  margin-top: ${(props) => props.marginTop || 0}px;
+  margin-top: ${props => props.marginTop || 0}px;
 
   ${mq[1]} {
     font-size: 3.6em;
@@ -130,4 +130,12 @@ export const ListItem = styled("li")`
 export const Span = styled("span")`
   margin: 0;
   font-size: 1.6em;
+`
+
+export const HideOnMobile = styled("p")`
+  display: none;
+
+  ${mq[1]} {
+    display: inline;
+  }
 `
